@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>项目信息</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 600px;
+            width: 100%;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        
+        .info-list {
+            list-style-type: none;
+        }
+        
+        .info-list li {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+        }
+        
+        .info-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .info-label {
+            font-weight: 600;
+            color: #2c3e50;
+            min-width: 100px;
+        }
+        
+        .info-value {
+            color: #7f8c8d;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #95a5a6;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .info-list li {
+                flex-direction: column;
+            }
+            
+            .info-label {
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>项目信息</h1>
+        
+        <ul class="info-list">
+            <li>
+                <span class="info-label">项目名称</span>
+                <span class="info-value">ds-find-cnki</span>
+            </li>
+            <li>
+                <span class="info-label">版本</span>
+                <span class="info-value">1.0.0</span>
+            </li>
+            <li>
+                <span class="info-label">作者</span>
+                <span class="info-value">zzyqq@qq.com</span>
+            </li>
+            <li>
+                <span class="info-label">版权</span>
+                <span class="info-value">© 山东师范大学图书馆技术保障部. 保留所有权利</span>
+            </li>
+            <li>
+                <span class="info-label">许可证</span>
+                <span class="info-value">Apache 2.0</span>
+            </li>
+            <li>
+                <span class="info-label">创建日期</span>
+                <span class="info-value">2025-04-14</span>
+            </li>
+        </ul>
+        
+        <footer>
+            <p>感谢使用本项目</p>
+        </footer>
+    </div>
+</body>
+</html>
